@@ -1,0 +1,37 @@
+<div class="character-sheet">
+  <!-- Header Section -->
+  <section class="sheet-header">
+    <h1>Character Sheet</h1>
+    <div class="header-fields">
+      <label>Character Name: <input type="text" name="name" value="{{name}}"></label>
+      <label>Power Level:
+        <select name="system.powerLevel">
+          {{#each (lookup ../ "powerLevels") as |level|}}
+            <option value="{{level}}" {{#ifEquals level ../system.powerLevel}}selected{{/ifEquals}}>{{level}}</option>
+          {{/each}}
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <h2>Stats</h2>
+    <div class="stat-field">
+      <label>Health Points: <input type="number" name="system.health" value="{{system.health}}"></label>
+      <label>Energy Points: <input type="number" name="system.energyPoints" value="{{system.energyPoints}}"></label>
+    </div>
+  </section>
+
+  <!-- Attributes Section -->
+  <section class="attributes-section">
+    <h2>Attributes</h2>
+    <div class="attributes-list">
+      {{#each system.attributes}}
+      <div class="attribute-item">
+        <label>{{name}} (Level: {{level}})</label>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+</div>

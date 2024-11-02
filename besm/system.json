@@ -1,0 +1,16 @@
+{
+  "name": "besm",
+  "title": "Big Eyes Small Mouth",
+  "description": "A custom BESM system for Foundry VTT.",
+  "version": "1.0",
+  "author": "Drew",
+  "esmodules": ["scripts/besm.js"],
+  "styles": ["styles/besm.css"],
+  "templates": ["templates/sheets/character-sheet.hbs"],
+  "lang": ["lang/en.json"],
+  "compatibility": {
+    "minimum": "10.0.0",
+    "verified": "12.331"
+  },
+  "actorTypes": ["character", "npc"]
+}

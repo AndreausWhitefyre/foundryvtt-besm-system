@@ -1,0 +1,39 @@
+.character-sheet {
+  background-color: #f0f4fc;
+  color: #333;
+  font-family: 'Anime Ace', sans-serif;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sheet-header h1 {
+  color: #0056b3;
+  font-size: 2em;
+  text-align: center;
+}
+
+.stat-field, .attributes-list {
+  margin-top: 15px;
+}
+
+.attribute-item {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.add-attribute {
+  background-color: #0056b3;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
